@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="374dp"
+        android:layout_height="303dp"
+        android:layout_gravity="center"
+        android:layout_margin="60dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/tv_nome_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tony Roma"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_endereco_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Av. Lavandisca, 717 - Indianopolis - São Paulo" />
+
+            <TextView
+                android:id="@+id/tv_horario_restaurate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha as 22:00hrs" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
