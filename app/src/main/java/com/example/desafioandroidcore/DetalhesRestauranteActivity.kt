@@ -3,8 +3,10 @@ package com.example.desafioandroidcore
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_detalhes_pratos.*
 import kotlinx.android.synthetic.main.activity_detalhes_restaurante.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -28,9 +30,12 @@ class DetalhesRestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoCli
         setContentView(R.layout.activity_detalhes_restaurante)
 
         setSupportActionBar(tb_detalheRestaurante)
+        tb_detalheRestaurante.setNavigationOnClickListener(View.OnClickListener() {
+            onBackPressed()
+        })
 
         rv_detalheRestaurante.adapter = adapter
-        rv_detalheRestaurante.layoutManager = LinearLayoutManager(this)
+        rv_detalheRestaurante.layoutManager = GridLayoutManager(this,2)
         rv_detalheRestaurante.setHasFixedSize(true)
 
         val rest = intent.getSerializableExtra("restaurante") as? Restaurantes

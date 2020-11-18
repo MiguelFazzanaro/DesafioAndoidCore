@@ -35,7 +35,7 @@ class RestauranteAdapter (var listaRestaurante: ArrayList<Restaurantes>, val lis
         val nome: TextView = itemView.findViewById(R.id.cv_tv_restaurante_nome)
         val endereco: TextView = itemView.findViewById(R.id.cv_tv_restaurante_endereco)
         val operacao: TextView = itemView.findViewById(R.id.cv_tv_restaurante_funcionamento)
-        val imagem: ImageView = itemView.findViewById(R.id.iv_detalhe_restaurante)
+        val imagem: ImageView = itemView.findViewById(R.id.cv_iv_restaurante_foto)
 
         init {
             itemView.setOnClickListener(this)
