@@ -9,6 +9,7 @@
     tools:context=".CadastroActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Register"

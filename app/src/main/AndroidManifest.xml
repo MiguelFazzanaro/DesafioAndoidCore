@@ -9,28 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioAndroidCore">
-
-        <!--
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
-        -->
-        <meta-data
-            android:name="com.google.android.wearable.standalone"
-            android:value="true" />
-
-        <activity
-            android:name=".CadastroActivity"
-            android:label="@string/title_activity_cadastro"></activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".MainActivity">
+<!--        <activity android:name=".Splash">-->
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        <activity android:name=".LoginActivity"/>-->
+        <activity android:name=".CadastroActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".DetalhesRestauranteActivity"/>
+        <activity android:name=".DetalhesPratosActivity"/>
+
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+
+
     </application>
 
 </manifest>

@@ -19,7 +19,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Name"
                 android:inputType="text"
-                android:background="@color/white"/>
+                android:background="@color/white"
+                android:textColor="@color/texto_login"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -31,7 +32,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:background="@color/white"/>
+                android:background="@color/white"
+                android:textColor="@color/texto_login"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +45,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:background="@color/white"/>
+                android:background="@color/white"
+                android:textColor="@color/texto_login"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -55,15 +58,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Repeat Passowrd"
-                android:background="@color/white"/>
+                android:background="@color/white"
+                android:textColor="@color/texto_login"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/bt_register_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
             android:text="REGISTER"
-            android:background="@color/button_login"/>
+            android:backgroundTint="@color/button_login"/>
 
 
     </LinearLayout>
