@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_detalhes_pratos.*
+import kotlinx.android.synthetic.main.activity_detalhes_pratos.tv_detalhe_nome_prato
+import kotlinx.android.synthetic.main.activity_detalhes_restaurante.*
 
 class DetalhesPratosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +17,10 @@ class DetalhesPratosActivity : AppCompatActivity() {
             onBackPressed()
         })
 
-        val nome = intent.getStringExtra("nome")
-        val descricao = intent.getStringExtra("descricao")
-
-        tv_detalhe_nome_prato.text = nome
-        tv_descricao_prato.text = descricao
+        val prat = intent.getSerializableExtra("prato") as? Pratos
+        tv_detalhe_nome_prato.text = prat!!.nome
+        tv_descricao_prato.text = prat.descricao
+        iv_detalhe_prato.setImageResource(prat.foto)
+        
     }
 }

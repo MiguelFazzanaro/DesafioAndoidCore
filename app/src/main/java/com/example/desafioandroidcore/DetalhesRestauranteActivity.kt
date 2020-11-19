@@ -17,12 +17,7 @@ class DetalhesRestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoCli
 
     private fun getPratos(): ArrayList<Pratos> {
         var prat1 = Pratos(1,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        var prat2 = Pratos(2,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        var prat3 = Pratos(3,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        var prat4 = Pratos(4,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        var prat5 = Pratos(4,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        var prat6 = Pratos(4,"Salada com molho Gengibre", (R.drawable.image4), "Salada Ligh com molho saboroso, contas com as gorduras boas do azeite de oliva e com moderada quantidade de calorias e sodio. O gengibre da um sabor resfrescante, otimo para o verão")
-        return arrayListOf(prat1,prat2,prat3,prat4,prat5,prat6)
+             return arrayListOf(prat1,prat1,prat1,prat1,prat1,prat1,prat1,prat1,prat1)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
